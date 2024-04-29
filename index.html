@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery Order - Import</title>
+    <title>Delivery Order - Export</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -469,9 +469,9 @@
                                 <img style="position: relative;right: 200px;" src="images/xpdLogo.png" alt="XPD Logo">
                             </div>
                             <div style="padding-top: 50px;position: relative;right: 200px;" class="full-width">
-                                ${carrier_agent_name}<br>Contact: ${carrier_agent_contact}<br>Phone: ${carrier_agent_phone}<br>Fax:${carrier_agent_fax}
+                                ${carrier_agent_name}<br>${carrier_agent_address}<br>Contact: ${carrier_agent_contact}<br>Phone: ${carrier_agent_phone}<br>Fax:${carrier_agent_fax}
                             </div>
-                            <div class=" full-width"><strong style="font-size: 20px; position: relative;left: 150px;top: 20px;"> Delivery Order (DO) - Import</strong></div>
+                            <div class=" full-width"><strong style="font-size: 20px; position: relative;left: 150px;top: 20px;"> Delivery Order (DO) - Export</strong></div>
                             <div class="full-width">
                                 <br><br><br><br>
                                 <p>File Number:</p>
@@ -485,13 +485,13 @@
                         <table>
                             <tr>
                                 <td class="wrap-text">
-                                    Pickup from:<br>${puf}
+                                    Pickup from:<br>${puf}<br> ${puf_address}
                                     <p><strong>Contact:${ pickup_contact }</strong></p>  
                                     <p><strong>Phone:${pickup_phone}</strong></p>            
                                     <p><strong>Email:${pickup_email}</strong></p>         
                                 </td>
                                 
-                                <td class="wrap-text">Delivering Carrier:<br> ${delivering_carrier }</td>
+                                <td class="wrap-text">Delivering Carrier:<br> ${delivering_carrier }<br> ${delivering_carrier_address}</td>
                                 <td class="wrap-text">Deliver To: <br>${ deliver_to }</td>
                                 <td class="wrap-text"><p>Bill to Party:${btp} </p>
                                     <p><strong>Contact:${btp_contact} </strong></p>                  
@@ -501,7 +501,7 @@
                             </tr>
                             <tr>
                                 <td class="wrap-text">     
-                                    <p>Shipper (Name and Address):<br>${shipper_address}</p>
+                                    <p>Shipper (Name and Address):${shipper_name}<br>${shipper_address}</p>
                                     <p><strong>Contact: ${shipper_contact}</strong></p>                  
                                     <p><strong>Phone: ${shipper_phone}</strong></p>                
                                     <p><strong>Fax: ${shipper_fax}</strong></p>              
