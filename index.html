@@ -207,8 +207,8 @@
             Bill to Party Address: <input type="text" name="BTP" id="btp_address" maxlength="50">
             Bill to Party Contact: <input type="text" name="btp_contact" id="btp_contact" maxlength="20">
             Bill to Party Phone: <input type="number" name="btp_phone" id="btp_phone" maxlength="20">
+            Bill to Party fax: <input type="number" name="btp_fax" id="btp_fax" maxlength="20">
             Bill to Party email: <input type="email" name="btp_email" id="btp_email" maxlength="20">
-            
         </div>
         <br><br>
         <div class="form-group">
@@ -334,6 +334,7 @@
             var btp= document.getElementById('btp').value;
             var btp_address= document.getElementById('btp_address').value;
             var btp_contact= document.getElementById('btp_contact').value;
+            var btp_fax= document.getElementById('btp_fax').value;
             var btp_phone= document.getElementById('btp_phone').value;
             var btp_email= document.getElementById('btp_email').value;
             var master_number= document.getElementById('master_number').value;
@@ -495,7 +496,8 @@
                                 <td class="wrap-text">Deliver To: <br>${ deliver_to }</td>
                                 <td class="wrap-text"><p>Bill to Party:${btp} </p>
                                     <p><strong>Contact:${btp_contact} </strong></p>                  
-                                    <p><strong>Phone:${btp_phone} </strong></p>                
+                                    <p><strong>Phone:${btp_phone} </strong></p>
+                                    <p><strong>Phone:${btp_fax} </strong></p>                
                                     <p><strong>Email:${btp_email} </strong></p>
                                 </td>       
                             </tr>
