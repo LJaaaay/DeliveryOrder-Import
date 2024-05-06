@@ -230,6 +230,7 @@
             Por of Loading: <input type="text" name="pol" id="pol" maxlength="30">
             Por of Discharge: <input type="text" name="pod" id="pod" maxlength="30">
             Final Destination: <input type="text" name="finalDest" id="finalDest" maxlength="20">
+             Prepared By: <input type="text" name="prepBy" id="prepBy" maxlength="30">
         </div>
         <br><br>
         
@@ -348,7 +349,8 @@
             var IT_number= document.getElementById('ITnumber').value;
             var entNum= document.getElementById('entNum').value;
             var FTED = document.getElementById('FTED').value;
-            var arrDate= document.getElementById('arrDate').value;
+            var FTED = document.getElementById('FTED').value;
+            var prepBy= document.getElementById('prepBy').value;
             var rows = document.getElementsByClassName('tableRow');
             var tableHTML = '<table style ="border: 2px solid black;text-align: left;"><tr><th style = "background-color: #f0f0f0;">Marks and Numbers</th><th style = "background-color: #f0f0f0;">Pieces</th><th style = "background-color: #f0f0f0;">Description</th><th style = "background-color: #f0f0f0;">Weight</th><th style = "background-color: #f0f0f0;">Vol Wgt/Chrg Wgt</th></tr>';
 
@@ -597,7 +599,7 @@
                                         <p style="position: relative; top:40px;">Prepared by:</p>     
                                     </div>
                                     <div style="text-align: center; position: relative; top:15px; width: 200px;" class="footer">
-                                        <p>Juliana Gil</p>
+                                        <p>${prepBy}</p>
                                         <hr style="color: black;"> 
                                         <p> ${carrier_agent_name}</p>    
                                     </div>
